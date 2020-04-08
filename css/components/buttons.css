@@ -1,0 +1,21 @@
+.driehoek img{
+width: 20%;
+    height: auto;
+    margin: 3% 40%;
+}
+
+
+
+/*************************
+*       MEDIA QUIRIES    *
+**************************/
+
+/* tablet*/
+@media only screen and (min-width: 768px) {
+
+}
+
+/* desktop*/
+@media only screen and (min-width: 1024px) {
+
+}
