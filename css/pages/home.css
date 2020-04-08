@@ -1,0 +1,582 @@
+#mobile {
+    display: block;
+}
+
+#fullpage {
+    display: none;
+}
+
+.naamLogo {
+    padding-left: 10%;
+    padding-top: 12%;
+}
+
+.imgVerena {
+    width: 70%;
+    height: 450px;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), url(/Assets/img/verena.jpg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: 40% 20%;
+    margin-left: 25%;
+    margin-right: 5%;
+    margin-top: 5%;
+    z-index: -1;
+    position: absolute;
+}
+
+.overMij {
+    margin-top: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.curriculumVitae {
+    margin-left: 10%;
+}
+
+/* CAROUSEL*/
+.carousel {
+    position: relative;
+    height: 300px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel_track-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel_slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel_button img {
+    width: 45px;
+}
+
+.carousel_button--left {
+    left: -70px;
+}
+
+.carousel_button--right {
+    right: -70px;
+}
+
+.carousel_nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel_indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #6e7bbb;
+    margin: 6px 7px 0px;
+    cursor: pointer;
+}
+
+.carousel_indicator.current-slide {
+    background: #e38b79;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.jobInformation {
+    width: 60%;
+    height: 360px;
+    margin: 0% 20%;
+    position: relative;
+    overflow: hidden;
+}
+
+.jobSpecs {
+    transition: transform 250ms ease-in;
+    height: 100%;
+}
+
+.textSlide {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #e38b79;
+}
+
+
+.socialIcons {
+    background-color: #e38b79;
+    width: 100%;
+    fill: #ffffff;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+footer svg {
+    position: relative;
+    padding: 3px 5%;
+    width: 40px;
+    height: 40px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.icon1 {
+    fill: #ffffff;
+}
+
+footer svg:hover {
+    background-color: #6e7bbb;
+    border-radius: 3px;
+}
+
+footer svg:hover .icon1 {
+    fill: #ffffff;
+}
+
+/* tablet*/
+@media only screen and (min-width: 768px) {
+    #mobile {
+        display: none;
+    }
+
+    #fullpage {
+        display: block;
+    }
+
+    .naamLogoWeb {
+        /* position:fixed;
+        z-index:4;*/
+        padding-left: 25%;
+        padding-top: 0%;
+        padding-bottom: 2%;
+    }
+
+    /*#textOverMij{
+        top:180px;
+    }
+
+    /* SWIPER */
+
+    .sectionInformationLeft {
+        background-color: #e38b79;
+        position: relative;
+        width: 40%;
+        margin: 0 45% 0 15%;
+        border-radius: 3px;
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+    }
+
+    .sectionInformationLeft:hover {
+        background-color: #6e7bbb;
+    }
+
+    .sectionInformationLeft:hover h2 {
+        color: #e38b79;
+    }
+
+    .sectionInformationLeft:hover h5 {
+        color: #e38b79;
+    }
+
+    .sectionInformationRight {
+        background-color: #e38b79;
+        position: relative;
+        width: 40%;
+        margin: 0 15% 0 45%;
+        border-radius: 3px;
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        z-index: 2;
+    }
+
+    .sectionInformationRight:hover {
+        background-color: #6e7bbb;
+    }
+
+    .sectionInformationRight:hover h2 {
+        color: #e38b79;
+    }
+
+    .sectionInformationRight:hover h5 {
+        color: #e38b79;
+    }
+
+    .sectionInformationRight:hover ~ .currentPlaat {
+        fill: #e38b79;
+    }
+
+    .section1 {
+        background: url('/Assets/imgDesktop/verena.jpg') repeat-y;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .section1 button {
+        text-align: center;
+        width: 20%;
+        margin: 2% 40% 0% 40%;
+        background-color: #e38b79;
+        border-radius: 3px;
+        opacity: 75%;
+        border-style: none;
+        transition-duration: 0.15s;
+        transition-timing-function: ease-in;
+    }
+
+    .section1 button:hover {
+        opacity: 100%;
+    }
+
+    .section h3 {
+        position: absolute;
+        right: -0%;
+        top: 50%;
+        transform: translateY(-50%);
+        transform: rotate(90deg);
+        margin: 0;
+        padding: 0;
+    }
+
+    .section2 {
+        box-sizing: border-box;
+    }
+
+    .section3 {
+        background: url('/Assets/imgDesktop/paradiso.jpg') repeat-y;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+
+    .section4 {
+        background: url('/Assets/imgDesktop/LiquicityMerchandise.jpg') repeat-y;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .section5 {
+        background: url('/Assets/imgDesktop/LiquicityStage.jpg') repeat-y;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .section6 {
+        background: url('/Assets/imgDesktop/tivreAssistent.jpg') repeat-y;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .section7 {
+        background: url('/Assets/imgDesktop/tivreStage.jpg') repeat-y;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .section8 {
+        background: url('/Assets/imgDesktop/013Stage.jpg') repeat-y;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .section9 {
+        background: url('/Assets/imgDesktop/MMT.jpg') repeat-y;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .section10 {
+        background: url('/Assets/imgDesktop/013bar.jpg') repeat-y;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    /* VINYL */
+    .vinylIndicator {
+
+        position: absolute;
+        width: 50px;
+        left: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .plaat {
+        width: 50px;
+        height: 50px;
+        margin: 5px 0px;
+    }
+
+    .plaat:hover {
+        fill: #e38b79;
+    }
+
+    .plaat svg {
+
+        width: 50px;
+        height: 50px;
+    }
+
+    .plaat.currentPlaat {
+        fill: #6e7bbb;
+        animation-name: spin;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+
+        }
+    }
+
+    /* TIMELINE */
+    /* The actual timeline (the vertical ruler) */
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 3px;
+        background-color: #6e7bbb;
+        top: 0;
+        bottom: 0;
+        left: 10%;
+        margin-left: -3px;
+    }
+
+    .timeline a {
+        text-decoration: none;
+    }
+
+    /* Container around content */
+    .box {
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        padding: 10px 30px;
+        position: relative;
+        background-color: inherit;
+        width: 520px;
+    }
+
+    /* The circles on the timeline */
+    .box::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: #6e7bbb;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .timeline .content:hover {
+
+        background-color: #6e7bbb;
+    }
+
+
+
+    .timeline .content:hover h2 {
+        color: #ffffff;
+    }
+
+    .timeline .content:hover h5 {
+        color: #ffffff;
+    }
+
+    /* Place the container to the right */
+    .right {
+        left: 10%;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        padding-bottom: 0px;
+        padding-top: 10px;
+    }
+
+    .content h5 {
+        font-size: 14px;
+        padding-top: 0px;
+        margin-top: 5px;
+    }
+
+
+    /* Add arrows to the right container (pointing left) */
+    .right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 20px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #e38b79 transparent transparent;
+    }
+
+    /* Fix the circle for containers on the right side */
+    .right::after {
+        left: -16px;
+    }
+
+    /* The actual content */
+    .content {
+        background-color: #e38b79;
+        position: relative;
+        border-radius: 3px;
+    }
+
+    .content h2 {
+        color: #4A494A;
+    }
+
+    .content h5 {
+        color: #4A494A;
+        margin-left: 20px;
+    }
+
+
+    /* FOOTER */
+    footer {
+        margin: 0px;
+        z-index: 2;
+        position: fixed;
+        right: -37%;
+        bottom: 0;
+        height: 50px;
+        background-color: transparent;
+        border-style: hidden;
+        border-radius: 3px;
+    }
+
+
+    .socialIcons {
+        position: absolute;
+        fill: #e38b79;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    .socialIcons.svg {
+        fill: #e38b79;
+    }
+
+    .socialIcons a {
+        text-decoration: none;
+    }
+
+    footer svg {
+        position: relative;
+        padding: 3px 3px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon1 {
+        fill: #e38b79;
+    }
+
+    footer svg:hover {
+        background-color: #6e7bbb;
+        border-radius: 3px;
+    }
+
+    footer svg:hover .icon1 {
+        fill: #ffffff;
+    }
+
+}
+
+/* desktop*/
+@media only screen and (min-width: 1024px) {}
