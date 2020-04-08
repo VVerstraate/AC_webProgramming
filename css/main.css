@@ -1,0 +1,30 @@
+/*************************
+*          BASE          *
+**************************/
+@import url("base/fonts.css");
+@import url("base/reset.css");
+
+/*************************
+*        COMPONENTS      *
+**************************/
+@import url("components/buttons.css");
+
+/*************************
+*          LAYOUT        *
+**************************/  
+@import url("layout/header.css");
+
+/*************************
+*          PAGES         *
+**************************/
+@import url("pages/home.css");
+
+/*************************
+*          TEXT         *
+**************************/
+@import url("text/text.css");
+
+/*************************
+*        FULLPAGE        *
+**************************/
+@import url("pages/fullpage.css")
